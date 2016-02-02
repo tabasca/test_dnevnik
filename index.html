@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>test-task for Dnevnik.ru</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="page">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__item">
+          <h1 class="page-header__title">Календарь</h1>
+          <button class="page-header__btn"><p>&#63;</p></button>
+        </div>
+        <div class="page-header__description">
+          <div class="page-header__item">
+            <div class="page-header__indicator  page-header__indicator--green"></div>
+            <p class="page-header__text">По плану</p>
+          </div>
+          <div class="page-header__item">
+            <div class="page-header__indicator  page-header__indicator--yellow"></div>
+            <p class="page-header__text">Изменения</p>
+          </div>
+          <div class="page-header__item">
+            <div class="page-header__indicator"></div>
+            <p class="page-header__text">Отмена</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div class="left-column">
+        <div class="left-column__item">
+          <p class="left-column__text"></p>
+        </div>
+        <div class="left-column__item">
+          <p class="left-column__text">8:00</p>
+        </div>
+        <div class="left-column__item">
+          <p class="left-column__text">9:00</p>
+        </div>
+        <div class="left-column__item">
+          <p class="left-column__text">10:00</p>
+        </div>
+        <div class="left-column__item">
+          <p class="left-column__text">11:00</p>
+        </div>
+        <div class="left-column__item">
+          <p class="left-column__text">12:00</p>
+        </div>
+        <div class="left-column__item">
+          <p class="left-column__text">13:00</p>
+        </div>
+        <div class="left-column__item">
+          <p class="left-column__text">14:00</p>
+        </div>
+      </div>
+
+      <div class="calendar__container">
+
+        <div class="calendar-intro">
+          <div class="calendar-intro__date">
+            <p class="calendar-intro__text">Сегодня</p>
+          </div>
+          <div class="calendar-intro__week">
+            <button class="btn  btn--prev">&#9664;</button>
+            <p class="calendar-intro__week-text">3-9 сентября 2014 г.</p>
+            <button class="btn  btn--next">&#9654;</button>
+          </div>
+          <div class="calendar-intro__wrapper">
+            <div class="calendar-intro__item">
+              <p class="calendar-intro__text">Месяц</p>
+            </div>
+            <div class="calendar-intro__item  calendar-intro__item--active">
+              <p class="calendar-intro__text">Неделя</p>
+            </div>
+            <div class="calendar-intro__item">
+              <p class="calendar-intro__text">День</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar">
+          <div class="calendar__row  calendar__row--heading">
+            <div class="calendar__item  calendar__item--heading">
+              <p class="calendar__text">3 Пн</p>
+            </div>
+            <div class="calendar__item  calendar__item--heading">
+              <p class="calendar__text  calendar__text--active">4 Вт (сегодня)</p>
+            </div>
+            <div class="calendar__item  calendar__item--heading">
+              <p class="calendar__text">5 Ср</p>
+            </div>
+            <div class="calendar__item  calendar__item--heading">
+              <p class="calendar__text">6 Чт</p>
+            </div>
+            <div class="calendar__item  calendar__item--heading">
+              <p class="calendar__text">7 Пт</p>
+            </div>
+            <div class="calendar__item  calendar__item--heading">
+              <p class="calendar__text">8 Сб</p>
+            </div>
+            <div class="calendar__item  calendar__item--heading">
+              <p class="calendar__text">9 Вс</p>
+            </div>
+          </div>
+
+          <div class="calendar__row">
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--30  calendar__lesson--40min">
+                <p class="calendar__time">8:30-9:10</p>
+                <p class="calendar__title">Биология, 8А</p>
+                <p class="calendar__description">Каб. 103</p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--30  calendar__lesson--40min">
+                <p class="calendar__time">8:30-9:10</p>
+                <p class="calendar__title">Биология, 8А</p>
+                <p class="calendar__description">Каб. 103</p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--30  calendar__lesson--40min">
+                <p class="calendar__time">8:30-9:10</p>
+                <p class="calendar__title">Биология, 8А</p>
+                <p class="calendar__description">Каб. 103</p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="calendar__row">
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--15  calendar__lesson--40min">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--15  calendar__lesson--40min">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--denied  calendar__lesson--30  calendar__lesson--40min">
+                <p class="calendar__time">8:30-9:10</p>
+                <p class="calendar__title">Человек и общество, 8А</p>
+                <p class="calendar__description">Каб. 326</p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="calendar__row">
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--05  calendar__lesson--100min">
+                <p class="calendar__time">10:05-11:45</p>
+                <p class="calendar__title">Биология, 8Б</p>
+                <p class="calendar__description">Каб. 103</p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="calendar__row">
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--05  calendar__lesson--40min">
+                <p class="calendar__time">11:05-11:45</p>
+                <p class="calendar__title">Биология, 8А</p>
+                <p class="calendar__description">Каб. 103</p>
+              </div>
+              <div class="calendar__lesson  calendar__lesson--absolute  calendar__lesson--active  calendar__lesson--55  calendar__lesson--40min">
+                <p class="calendar__time">11:55-12:35</p>
+                <p class="calendar__title">Биология, 8Б</p>
+                <p class="calendar__description">Каб. 211</p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--05  calendar__lesson--40min">
+                <p class="calendar__time">11:05-11:45</p>
+                <p class="calendar__title">Биология, 8Б</p>
+                <p class="calendar__description">Каб. 205</p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--modified  calendar__lesson--05  calendar__lesson--40min">
+                <p class="calendar__time">14:00-15:30</p>
+                <p class="calendar__title">Биология, 8Б</p>
+                <p class="calendar__description">Каб. 205</p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item  calendar__item--holiday">
+              <p class="calendar__holiday">Праздничный день</p>
+              <div class="calendar__lesson  calendar__lesson--holiday">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="calendar__row">
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--55  calendar__lesson--40min">
+                <p class="calendar__time">11:55-12:35>
+                <p class="calendar__title">Биология, 8Б</p>
+                <p class="calendar__description">Каб. 205</p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="calendar__row">
+            <div class="calendar__item">
+              <div class="calendar__lesson  calendar__lesson--active  calendar__lesson--55  calendar__lesson--40min">
+                <p class="calendar__time">11:55-12:35>
+                <p class="calendar__title">Биология, 8Б</p>
+                <p class="calendar__description">Каб. 205</p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="calendar__row">
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <div class="calendar__lesson">
+                <p class="calendar__time"></p>
+                <p class="calendar__title"></p>
+                <p class="calendar__description"></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__text"><span class="page-footer__text  page-footer__text--bold">Неделя:</span> всего 33 урока по плану, 1 замена, 1 отмен.</p>
+    </footer>
+
+  </body>
+
+</html>

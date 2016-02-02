@@ -1,0 +1,9 @@
+source/
+ID/
+node_modules/
+bower_components/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log
