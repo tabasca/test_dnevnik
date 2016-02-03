@@ -1,0 +1,46 @@
+{
+  "name": "test_dnevnik",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Тестовое задание",
+  "author": "Екатерина Иванюта",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tabasca/test_dnevnik.git"
+  },
+  "homepage": "https://github.com/tabasca/test_dnevnik",
+  "dependencies": {
+    "autoprefixer": "6.1.x",
+    "eclint": "1.1.x",
+    "flickity": "^1.1.2",
+    "fs-extra": "0.26.x",
+    "gulp": "3.9.x",
+    "gulp-less": "3.0.x",
+    "gulp-plumber": "1.0.x",
+    "gulp-postcss": "6.0.x",
+    "normalize.css": "^3.0.3",
+    "browser-sync": "^2.10.1",
+    "fs-extra": "^0.26.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-dest-clean": "^0.5.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "imagemin-pngquant": "^4.2.0"
+  },
+  "scripts": {
+    "test": "gulp lint",
+    "start": "gulp start"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
