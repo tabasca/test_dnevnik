@@ -1,6 +1,7 @@
 var calendar = document.querySelector(".calendar");
 var lesson = document.querySelector(".calendar__lesson--1_7");
 var popup = document.querySelector(".popup--1_7");
+var close = document.querySelector(".popup__close");
 
 // var close = document.querySelector(".search-hotel-close");
 
@@ -19,26 +20,26 @@ function positionAt(anchor, position, elem) {
   var anchorCoords = anchor.getBoundingClientRect();
 
   switch (position) {
-    case "top":
-      elem.style.left = anchorCoords.left + "px";
-      elem.style.top = anchorCoords.top - elem.offsetHeight + "px";
-      break;
+    // case "top":
+    //   elem.style.left = anchorCoords.left + "px";
+    //   elem.style.top = anchorCoords.top - elem.offsetHeight + "px";
+    //   break;
 
     case "right":
-      elem.style.left = anchor.offsetWidth + "px";
-      elem.style.top = anchorCoords.top - elem.offsetHeight + "px";
+      elem.style.left = anchorCoords.left + anchor.offsetWidth + 1 +"px";
+      elem.style.top = anchorCoords.bottom - elem.offsetHeight + "px";
       break;
 
-    case "bottom":
-      elem.style.left = anchorCoords.left + "px";
-      elem.style.top = anchorCoords.top + anchor.offsetHeight + "px";
-      break;
+    // case "bottom":
+    //   elem.style.left = anchorCoords.left + "px";
+    //   elem.style.top = anchorCoords.top + anchor.offsetHeight + "px";
+    //   break;
   }
 
 }
 
 /**
- * Показывает заметку с текстом html на позиции position
+ * Показывает попап на позиции position
  * относительно элемента anchor
  */
 lesson.addEventListener("click", function(event) {
@@ -59,11 +60,7 @@ window.addEventListener("keydown", function(event) {
   }
 });
 
-
-
-
-// close.addEventListener("click", function(event) {
-// event.preventDefault();
-// popup.classList.remove("search-hotel-show");
-// popup.classList.remove("search-error");
-// });
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.remove("popup--show");
+});
